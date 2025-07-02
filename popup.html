@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DeepPromptor</title>
+  <style>
+    body { font-family: sans-serif; margin: 16px; width: 300px; }
+    #prompt { white-space: pre-wrap; margin-bottom: 12px; }
+    button { margin-right: 8px; }
+    #spinner {
+      display: none;
+      margin-bottom: 8px;
+    }
+    #controls button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <img id="spinner" src="icons/spinner.gif" alt="Loading…" width="24" height="24" />
+  <textarea id="prompt" readonly rows="8" style="width:100%">Loading…</textarea>
+  <div id="controls">
+    <button id="copyBtn">Copy</button>
+    <button id="regenBtn">Regenerate</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

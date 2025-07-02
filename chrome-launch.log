@@ -1,0 +1,17 @@
+[52105:6062838:0702/175346.482383:ERROR:content/public/browser/web_contents_delegate.cc:299] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[52105:6062838:0702/175346.482412:ERROR:content/public/browser/web_contents_delegate.cc:299] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+[52105:6062900:0702/175406.628337:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[52105:6062900:0702/175406.628434:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[52105:6062900:0702/175406.629515:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[52105:6062900:0702/175406.744171:ERROR:google_apis/gcm/engine/mcs_client.cc:700]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[52105:6062900:0702/175406.744180:ERROR:google_apis/gcm/engine/mcs_client.cc:702] Failed to log in to GCM, resetting connection.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1751493249.012119 6062898 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+Trying to load the allocator multiple times. This is *not* supported.
+[52105:6062838:0702/175410.268995:ERROR:CONSOLE:0] "Refused to frame 'https://accounts.google.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors https://policies.google.com".
+", source:  (0)
+[52105:6062900:0702/175430.804737:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[52105:6062895:0702/175434.985802:ERROR:components/sync/engine/get_updates_processor.cc:268] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_ABORTED)
+[52105:6062900:0702/175502.311616:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

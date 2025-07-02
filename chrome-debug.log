@@ -1,0 +1,30 @@
+[52287:6065715:0702/175501.989990:VERBOSE1:base/metrics/statistics_recorder.cc:596] Collections of all histograms
+Histogram: Chrome.ProcessSingleton.NotifyResult recorded 1 samples, mean = 1.0 (flags = 0x41)
+0  O                                                                         (0 = 0.0%)
+1  -O                                                                        (1 = 100.0%) {0.0%}
+2  ... 
+
+Histogram: Chrome.ProcessSingleton.TimeToNotify recorded 1 samples, mean = 9.0 (flags = 0x41)
+0  -O                                                                        (1 = 100.0%)
+10 ... 
+
+Histogram: Startup.LoadTime.RecordedProcessCreation recorded 1 samples, mean = 1.0 (flags = 0x1)
+0  O                                                                         (0 = 0.0%)
+1  -O                                                                        (1 = 100.0%) {0.0%}
+2  O                                                                         (0 = 0.0%) {100.0%}
+
+Histogram: UMA.PersistentAllocator.BrowserMetrics.UsedPct recorded 0 samples (flags = 0x41)
+0 ... 
+
+Histogram: UMA.PersistentAllocator.EarlyHistograms.BrowserMetrics recorded 1 samples, mean = 1.0 (flags = 0x41)
+0  O                                                                         (0 = 0.0%)
+1  -O                                                                        (1 = 100.0%) {0.0%}
+2  ... 
+
+Histogram: UMA.PersistentHistograms.InitResult recorded 1 samples, mean = 2.0 (flags = 0x41)
+0  ... 
+2  -O                                                                        (1 = 100.0%) {0.0%}
+3  ... 
+
+
+Opening in existing browser session.

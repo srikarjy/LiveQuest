@@ -1,1 +1,29 @@
-.env 
+# Secrets
+.env
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.mypy_cache/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Caches / runtime
+backend/.cache/
+.DS_Store
+
+# Legacy (kept for reference, not part of the new build)
+legacy/node_modules/
+
+# Neo4j local data
+neo4j/data/
+neo4j/logs/

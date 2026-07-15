@@ -10,13 +10,13 @@ its own provenance (where the fact came from). Nothing is unattributed.
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
-from enum import Enum
+from datetime import UTC, datetime
+from enum import StrEnum
 
 from pydantic import BaseModel, Field
 
 
-class NodeType(str, Enum):
+class NodeType(StrEnum):
     DISEASE = "Disease"
     GENE = "Gene"
     PROTEIN = "Protein"
@@ -25,7 +25,7 @@ class NodeType(str, Enum):
     TRIAL = "Trial"
 
 
-class RelType(str, Enum):
+class RelType(StrEnum):
     ASSOCIATED_WITH = "ASSOCIATED_WITH"  # Gene↔Disease, Drug↔Disease
     ENCODES = "ENCODES"  # Gene→Protein
     TARGETS = "TARGETS"  # Drug→Gene/Protein
@@ -34,13 +34,13 @@ class RelType(str, Enum):
     IMPLICATES = "IMPLICATES"  # Trial→Disease
 
 
-class Stance(str, Enum):
+class Stance(StrEnum):
     SUPPORTS = "supports"
     CONTRADICTS = "contradicts"
 
 
 def _utcnow() -> str:
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now(UTC).isoformat()
 
 
 class Provenance(BaseModel):

@@ -6,12 +6,12 @@ their recency, and agreement; it falls when the Skeptic finds contradictions.
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from app.graph.models import Evidence, Stance
 
 # Year used for recency decay; injectable for deterministic tests.
-_CURRENT_YEAR = datetime.now(timezone.utc).year
+_CURRENT_YEAR = datetime.now(UTC).year
 
 
 def _recency_factor(year: int | None, current_year: int = _CURRENT_YEAR) -> float:

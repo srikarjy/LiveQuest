@@ -4,7 +4,7 @@ Pose a real biomedical question — *"Why is semaglutide showing a liver-toxicit
 
 The mission framing (difficulty, evidence found, live confidence %) is a **presentation layer over a serious engineering core**: a Neo4j knowledge graph, a real ingestion pipeline (PubMed + Open Targets), async multi-agent orchestration, provenance on every fact, evidence scoring, and graph algorithms.
 
-> Status: **under active construction** (branch `livequest`). See `~/.claude/plans/prancy-shimmying-zebra.md` for the full plan.
+> Status: **under active construction** on the `livequest` branch. The MVP target is one complete single-player vertical slice: seed question → live multi-agent investigation → provenance-backed graph.
 
 ## The agent cast
 
@@ -29,6 +29,7 @@ The mission framing (difficulty, evidence found, live confidence %) is a **prese
 ## Quickstart
 
 ```bash
+git clone https://github.com/srikarjy/LiveQuest.git && cd LiveQuest
 cp .env.example .env          # add ANTHROPIC_API_KEY for a live run
 docker compose up             # Neo4j + backend + frontend
 # frontend → http://localhost:5173   backend → http://localhost:8000/health

@@ -1,5 +1,5 @@
 [project]
-name = "bioquest"
+name = "livequest"
 version = "0.1.0"
 description = "Gamified biomedical investigation platform — multi-agent knowledge-graph engine"
 readme = "../README.md"
